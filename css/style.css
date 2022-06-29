@@ -1,0 +1,381 @@
+@charset "UTF-8";
+/*Обнуление*/
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Flex:regular");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*--------------------*/
+body {
+  background: #f5f5f5;
+}
+
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.header__body {
+  width: 100%;
+  min-height: 106px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+._container {
+  max-width: 1128px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.card-slider__wrapper {
+  padding: 0 0 41px 0;
+}
+.card-slider__slide {
+  padding: 0 15px;
+}
+.card-slider__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.card-slider__left {
+  max-width: 602px;
+  margin: 0 44px 0 0;
+}
+.card-slider__right img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.card-slider__title {
+  font-family: "Roboto Flex";
+  font-weight: 750;
+  font-size: 48px;
+  line-height: 100%;
+  letter-spacing: -0.5px;
+  color: #090909;
+  font-stretch: 151%;
+  font-variation-settings: "GRAD" 0, "slnt" 0, "XTRA" 499, "XOPQ" 96, "YOPQ" 79, "YTLC" 514, "YTUC" 712, "YTAS" 750, "YTDE" -203, "YTFI" 738;
+  margin: 0 0 56px 0;
+}
+.card-slider__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+.card-slider__buttons::before {
+  content: "Скоро запуск";
+  position: absolute;
+  top: -15%;
+  left: 18%;
+  font-family: "Roboto Flex";
+  border-radius: 8px;
+  z-index: 5;
+  width: 144px;
+  height: 32px;
+  font-weight: 750;
+  font-size: 14px;
+  line-height: 143%;
+  color: #ffffff;
+  font-stretch: extra-expanded;
+  font-variation-settings: "GRAD" 0, "slnt" 0, "XTRA" 499, "XOPQ" 96, "YOPQ" 79, "YTLC" 514, "YTUC" 712, "YTAS" 750, "YTDE" -203, "YTFI" 738;
+  -webkit-transform: rotate(-15deg);
+      -ms-transform: rotate(-15deg);
+          transform: rotate(-15deg);
+  background: #ff6700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.card-slider__btn-appStore {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 179px;
+  height: 64px;
+  background: #6a6a6a;
+  border-radius: 36px;
+  margin: 0 24px 0 0;
+  position: relative;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.card-slider__btn-appStore::before {
+  content: "";
+  width: 35px;
+  height: 35px;
+  background: url(../img/apple.svg) center no-repeat;
+  position: absolute;
+  top: 20%;
+  left: 8%;
+}
+.card-slider__btn-appStore::after {
+  content: "";
+  background: url(../img/appStore.svg) center/cover no-repeat;
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  width: 90px;
+  height: 19px;
+}
+.card-slider__btn-appStore:hover {
+  -webkit-transform: translate(-3px, -3px);
+      -ms-transform: translate(-3px, -3px);
+          transform: translate(-3px, -3px);
+  -webkit-box-shadow: 3px 3px 0 #090909;
+          box-shadow: 3px 3px 0 #090909;
+}
+.card-slider__btn-appStore:active {
+  -webkit-transform: translate(0px, 0px);
+      -ms-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+  -webkit-box-shadow: 0px 0px 0 #090909;
+          box-shadow: 0px 0px 0 #090909;
+}
+.card-slider__btn-googlePlay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 200px;
+  height: 64px;
+  background: #6a6a6a;
+  border-radius: 36px;
+  position: relative;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.card-slider__btn-googlePlay::before {
+  content: "";
+  width: 35px;
+  height: 37px;
+  background: url(../img/playMarket.svg) center/cover no-repeat;
+  position: absolute;
+  top: 20%;
+  left: 11%;
+}
+.card-slider__btn-googlePlay::after {
+  content: "";
+  background: url(../img/google.svg) center/cover no-repeat;
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  -webkit-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  width: 106px;
+  height: 22px;
+}
+.card-slider__btn-googlePlay:hover {
+  -webkit-transform: translate(-3px, -3px);
+      -ms-transform: translate(-3px, -3px);
+          transform: translate(-3px, -3px);
+  -webkit-box-shadow: 3px 3px 0 #090909;
+          box-shadow: 3px 3px 0 #090909;
+}
+.card-slider__btn-googlePlay:active {
+  -webkit-transform: translate(0px, 0px);
+      -ms-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+  -webkit-box-shadow: 0px 0px 0 #090909;
+          box-shadow: 0px 0px 0 #090909;
+}
+.card-slider__name {
+  font-family: "Roboto Flex";
+  color: #ffffff;
+  font-weight: 550;
+  font-size: 12px;
+  line-height: 133%;
+  letter-spacing: 0.25px;
+  color: #ffffff;
+  font-stretch: 151%;
+  font-variation-settings: "GRAD" 0, "slnt" 0, "XTRA" 499, "XOPQ" 96, "YOPQ" 79, "YTLC" 514, "YTUC" 712, "YTAS" 750, "YTDE" -203, "YTFI" 738;
+  padding: 0 0 20px 0;
+}
+.card-slider__prev {
+  font-size: 15px;
+  color: #090909;
+}
+.card-slider__next {
+  text-align: center;
+  font-family: "Roboto Flex";
+  font-style: normal;
+  font-weight: 550;
+  font-size: 14px;
+  line-height: 143%;
+  letter-spacing: 0.25px;
+  color: #090909;
+  font-stretch: 151%;
+  font-variation-settings: "GRAD" 0, "slnt" 0, "XTRA" 499, "XOPQ" 96, "YOPQ" 79, "YTLC" 514, "YTUC" 712, "YTAS" 750, "YTDE" -203, "YTFI" 738;
+}
+.card-slider__next::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background: url(../img/arrow.svg) center no-repeat;
+  display: inline-block;
+  text-align: center;
+  margin: 0 8px 0 0;
+}
+
+@media (max-width: 767px) {
+  .header__body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .card-slider__body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    position: relative;
+  }
+  .card-slider__left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .card-slider__title {
+    text-align: center;
+    font-size: 16px;
+    line-height: 125%;
+    font-stretch: ultra-condensed;
+  }
+  .card-slider__title br {
+    display: none;
+  }
+}
