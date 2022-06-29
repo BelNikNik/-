@@ -1,7 +1,5 @@
 @charset "UTF-8";
 /*Обнуление*/
-@import url("https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic");
-@import url("https://fonts.googleapis.com/css?family=Roboto+Flex:regular");
 * {
   padding: 0;
   margin: 0;
@@ -243,6 +241,7 @@ body {
           transform: translate(-3px, -3px);
   -webkit-box-shadow: 3px 3px 0 #090909;
           box-shadow: 3px 3px 0 #090909;
+  background: #5337ff;
 }
 .card-slider__btn-appStore:active {
   -webkit-transform: translate(0px, 0px);
@@ -250,6 +249,7 @@ body {
           transform: translate(0px, 0px);
   -webkit-box-shadow: 0px 0px 0 #090909;
           box-shadow: 0px 0px 0 #090909;
+  background: #5337ff;
 }
 .card-slider__btn-googlePlay {
   display: -webkit-box;
@@ -297,6 +297,7 @@ body {
           transform: translate(-3px, -3px);
   -webkit-box-shadow: 3px 3px 0 #090909;
           box-shadow: 3px 3px 0 #090909;
+  background: #5337ff;
 }
 .card-slider__btn-googlePlay:active {
   -webkit-transform: translate(0px, 0px);
@@ -304,6 +305,7 @@ body {
           transform: translate(0px, 0px);
   -webkit-box-shadow: 0px 0px 0 #090909;
           box-shadow: 0px 0px 0 #090909;
+  background: #5337ff;
 }
 .card-slider__name {
   font-family: "Roboto Flex";
@@ -315,7 +317,7 @@ body {
   color: #ffffff;
   font-stretch: 151%;
   font-variation-settings: "GRAD" 0, "slnt" 0, "XTRA" 499, "XOPQ" 96, "YOPQ" 79, "YTLC" 514, "YTUC" 712, "YTAS" 750, "YTDE" -203, "YTFI" 738;
-  padding: 0 0 20px 0;
+  padding: 0 0 20px 20px;
 }
 .card-slider__prev {
   font-size: 15px;
