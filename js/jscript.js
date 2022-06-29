@@ -2,11 +2,15 @@
 
 let cardSlider = new Swiper('.card-slider', {
 	slidesPerView: 1,
-	//direction: vertical,
+	direction: 'vertical',
 	mousewheel: true,
 	navigation: {
 		nextEl: ".card-slider__next",
 		prevEl: ".card-slider__prev"
 	},
+	pagination: {
+		el: '.swiper-pagination',
+		type: 'bullets',
+		clickable: true
+	},
 });
-

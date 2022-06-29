@@ -113,12 +113,15 @@ body {
           align-items: center;
 }
 
-._container {
+[class*=__container] {
   max-width: 1128px;
   padding: 0 15px;
   margin: 0 auto;
 }
 
+.card-slider {
+  height: 800px;
+}
 .card-slider__wrapper {
   padding: 0 0 41px 0;
 }
@@ -319,6 +322,7 @@ body {
   color: #090909;
 }
 .card-slider__next {
+  border: 1px solid #ff6700;
   text-align: center;
   font-family: "Roboto Flex";
   font-style: normal;
@@ -329,6 +333,7 @@ body {
   color: #090909;
   font-stretch: 151%;
   font-variation-settings: "GRAD" 0, "slnt" 0, "XTRA" 499, "XOPQ" 96, "YOPQ" 79, "YTLC" 514, "YTUC" 712, "YTAS" 750, "YTDE" -203, "YTFI" 738;
+  cursor: pointer;
 }
 .card-slider__next::before {
   content: "";
@@ -338,6 +343,14 @@ body {
   display: inline-block;
   text-align: center;
   margin: 0 8px 0 0;
+}
+.card-slider__pag .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background-color: #6a6a6a;
+  border-radius: 50%;
+  font-size: 20px;
+  line-height: 14px;
 }
 
 @media (max-width: 767px) {
